@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- Gradient matching the provided icon (purple → cyan) -->
+    <linearGradient id="n-gradient" x1="12%" y1="18%" x2="88%" y2="82%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="55%" stop-color="#5B7CF1"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <!-- Subtle dark background with vignette like the PNG -->
+    <radialGradient id="bg" cx="35%" cy="28%" r="85%">
+      <stop offset="0%" stop-color="#121821"/>
+      <stop offset="100%" stop-color="#0A0F15"/>
+    </radialGradient>
+
+    <!-- Soft outer glow around the N -->
+    <filter id="n-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+
+  <!-- Stylized N with rounded ends -->
+  <path d="M128 368 L128 160 M128 160 L384 352 M384 352 L384 144"
+        fill="none"
+        stroke="url(#n-gradient)"
+        stroke-width="46"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        filter="url(#n-glow)"/>
+</svg>
+
