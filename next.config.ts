@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repoName = "Numeon";
+const repoName = "Numaeon";
 const isGithubPages = process.env.GITHUB_PAGES === "true";
 
 const nextConfig: NextConfig = {

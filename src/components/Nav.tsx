@@ -15,7 +15,7 @@ export default function Nav() {
       <div className="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between">
         <a href="#" className="inline-flex items-center gap-2 font-semibold">
           <span className="text-cyan-400">◉</span>
-          <span>Numeon</span>
+          <span>Numaeon</span>
         </a>
         <nav aria-label="Primary" className="hidden md:block">
           <ul className="flex items-center gap-1">

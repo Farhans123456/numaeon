@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import HoverCard from "@/components/HoverCard";
 
-const THEME_KEY = "numeon-theme" as const;
+const THEME_KEY = "numaeon-theme" as const;
 type ThemeMode = "auto" | "light" | "dark";
 
 function applyTheme(mode: ThemeMode) {

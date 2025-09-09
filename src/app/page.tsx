@@ -10,7 +10,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 grid gap-10 md:grid-cols-2 items-center">
           <div className="grid gap-5">
             <h1 className="text-4xl/tight sm:text-5xl/tight font-extrabold">
-              <span className="bg-gradient-to-tr from-violet-600 to-cyan-400 bg-clip-text text-transparent">Numeon</span>
+              <span className="bg-gradient-to-tr from-violet-600 to-cyan-400 bg-clip-text text-transparent">Numaeon</span>
               <br />
               AI, refined for humans
             </h1>
@@ -131,7 +131,7 @@ export default function Home() {
       {/* CTA */}
       <section id="cta" className="py-16">
         <div className="mx-auto max-w-6xl px-4 text-center">
-          <h2 className="text-3xl font-bold">Ready to try Numeon?</h2>
+          <h2 className="text-3xl font-bold">Ready to try Numaeon?</h2>
           <p className="text-foreground/70 mt-1">Drop your email and we’ll reach out with updates.</p>
           <div className="mt-4">
             <SignupForm />
@@ -142,7 +142,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-black/10 dark:border-white/10">
         <div className="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between text-sm">
-          <small>© {new Date().getFullYear()} Numeon</small>
+          <small>© {new Date().getFullYear()} Numaeon</small>
           <a href="#" className="text-foreground/60 hover:text-foreground">Privacy</a>
         </div>
       </footer>
