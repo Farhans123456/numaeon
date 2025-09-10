@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -25,10 +26,10 @@ export const metadata: Metadata = {
     title: "Numaeon — Next‑gen AI, simply powerful",
     description: "Elegant, fast, and practical. Build with Numaeon.",
     type: "website",
-    images: ["/favicon.svg"],
+    images: [`${basePath}/favicon.svg`],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: `${basePath}/favicon.ico`,
   },
 };
 
